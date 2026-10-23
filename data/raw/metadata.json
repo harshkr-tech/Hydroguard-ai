@@ -1,0 +1,13 @@
+{
+  "station_id": "USGS-01646500",
+  "station_name": "Potomac River at Little Falls, near Washington, D.C.",
+  "parameter_code": "00060",
+  "parameter_description": "Discharge (streamflow), daily mean",
+  "statistic_id": "00003",
+  "unit_of_measure": "ft3/s (cubic feet per second)",
+  "date_range_requested": "2021-01-01 to 2025-12-31",
+  "source_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-01646500&parameter_code=00060&statistic_id=00003&datetime=2021-01-01%2F2025-12-31&limit=1000",
+  "api_documentation": "https://api.waterdata.usgs.gov/docs/ogcapi/",
+  "retrieval_date": "2026-10-12T13:59:34.070685+00:00",
+  "output_file": "streamflow.csv"
+}

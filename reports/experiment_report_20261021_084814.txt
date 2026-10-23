@@ -1,0 +1,26 @@
+HydroGuard AI - Peak Improvement Experiment Report
+Generated: 2026-10-21 08:48:14
+Dataset: 1826 days, 2021-01-01 to 2025-12-31
+Train days: 1430
+Test days: 366
+Split date: 2024-12-31
+Training maximum: 102,000 cfs
+Peak threshold: 17,100 cfs
+Peak test days: 39
+OOD test days: 2
+
+Model                         MAE       RMSE       R2   Peak MAE    Peak RMSE  Peak Bias
+----------------------------------------------------------------------------------------------------
+Naive                     1,805.3    7,237.9   0.6586   11,842.6     21,964.6   -1,191.3
+RF_base_5feat             1,518.0    6,513.3   0.7235    9,386.6     19,682.7   -4,393.2
+RF_ext_11feat             1,560.5    6,796.0   0.6990    9,602.6     20,538.6   -5,023.8
+RF_weighted_4x            1,722.6    7,013.4   0.6794    9,384.1     20,757.9   -4,338.4
+RF_log1p                  1,552.2    7,120.1   0.6696   10,079.7     21,613.4   -6,485.0
+RF_log1p_weighted         1,551.6    6,948.4   0.6853    9,941.0     21,063.3   -5,140.8
+GBR                       1,661.5    6,902.5   0.6895    9,817.5     20,789.6   -4,800.9
+GBR_log1p_weighted        1,618.3    7,093.7   0.6720    9,683.8     21,449.0   -6,299.4
+
+Notes:
+- Tree-based models generally cannot extrapolate reliably beyond the training target range.
+- Peak weighting and log1p transformation are experimental approaches, not guaranteed improvements.
+- Features use past discharge values only.

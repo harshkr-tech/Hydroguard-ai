@@ -1,0 +1,13 @@
+HydroGuard AI - Training Report
+=============================================
+Dataset: C:\Users\harsh\.gemini\hydroguard-ai\data\raw\streamflow.csv
+Train rows: 1453
+Test rows: 366
+Features: ['lag_1', 'lag_2', 'lag_3', 'lag_7', 'rolling_mean_7']
+Training maximum: 102,000.00 cfs
+Peak threshold: 17,080.00 cfs
+Peak test days: 39
+
+Random Forest: {'MAE_cfs': 1477.6235163479507, 'RMSE_cfs': 6286.735732139051, 'R2': 0.7424030715912362, 'Bias_cfs': -263.66564663645374}
+Naive baseline: {'MAE_cfs': 1805.327868852459, 'RMSE_cfs': 7237.940356281813, 'R2': 0.6585553827911451, 'Bias_cfs': 6.311475409836065}
+Peak metrics: {'MAE_cfs': 8901.852591496823, 'RMSE_cfs': 18954.181948757738, 'R2': 0.3985940913603063, 'Bias_cfs': -4132.8225486052415}
